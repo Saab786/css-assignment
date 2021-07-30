@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ol,
+ul,
+li,
+form,
+footer,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url("e595695151e71cf7003bbe188f052cb0.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+    margin-bottom: 0;
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+.board {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 20px;
+    padding: 84px 25px 25px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: rgb(49, 155, 194, 0.5);
+    color: white;
+}
+
+.navbar .pointer:hover {
+    opacity: 0.7;
+}
+
+.navbar>* {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .menu>*,
+.navbar .actions>* {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0px 4px;
+    background-color: rgb(103, 178, 206);
+}
+
+.navbar .menu {
+    justify-content: flex-start;
+}
+
+.navbar .menu-input {
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar .menu-input input {
+    width: 120px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgb(103, 178, 206);
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.navbar .menu-input input:focus {
+    background-color: white;
+}
+
+.navbar .app-title {
+    justify-content: space-around;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.navbar .actions {
+    justify-content: flex-end;
+}
+
+.board-container {
+    display: flex;
+    height: 790px;
+    overflow-y: hidden;
+}
+
+.board-menu {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(88, 88, 88, 0.3);
+    color: white;
+}
+
+.full-width-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: rgb(54, 155, 214);
+    color: white;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.pointer:hover {
+    opacity: 0.7;
+}
+
+.pointer:active {
+    outline: none;
+}
+
+.task-list-wrapper {
+    flex-shrink: 0;
+    flex-basis: 240px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.task-list {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgb(204, 204, 204);
+}
+
+.task-list-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list-title {
+    margin: 4px;
+    font-weight: bold;
+}
+
+.task-list-more {
+    margin: 0 4px;
+}
+
+.task {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.task .task-edit {
+    float: right;
+    display: none;
+}
+
+.task:hover .task-edit {
+    display: inline;
+}
+
+.task-list .task,
+.task-list input,
+.task-list textarea,
+.task-list button {
+    border-radius: 4px;
+}
+
+.add-card-form-actions,
+.add-list-form-actions {
+    margin: 10px 0;
+}
+
+.add-card-button,
+.add-list-button {
+    margin-right: 8px;
+}
+
+.add-card-cancel,
+.add-list-cancel {
+    position: relative;
+    top: 3px;
+}
